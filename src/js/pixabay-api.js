@@ -10,8 +10,5 @@ export function getImagesByQuery(query) {
         })
         .catch(error => {
             console.error(error);
-        })
-        .finally(() => {
-            console.log('Request completed');
         });
 }
