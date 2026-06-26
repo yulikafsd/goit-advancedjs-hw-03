@@ -5,11 +5,16 @@
   |============================
 */
 
+/* Libraries styles */
+@import url('izitoast/dist/css/iziToast.min.css');
+@import url('simplelightbox/dist/simple-lightbox.min.css');
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./back-link.css');
+@import url('./container.css');
+@import url('./loader.css');
+@import url('./form.css');
+@import url('./gallery.css');

@@ -4,31 +4,40 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Advanced JS - HW1</title>
+        <title>Advanced JS - HW3</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header class="header">
+        <main>
             <div class="container">
-                <nav class="nav">
-                    <a
-                        class="nav-logo"
-                        href="./index.html"
-                        aria-label="Site logo"
+                <form class="form">
+                    <label class="form-label">
+                        <input
+                            class="form-input"
+                            type="text"
+                            name="search-text"
+                            placeholder="Search images..."
+                            aria-label="Search images"
+                            required
+                        />
+                    </label>
+                    <button type="submit" class="submit-button">Search</button>
+                </form>
+                <div class="load-wrapper">
+                    <span class="loading-text"
+                        >Loading images, please wait...</span
                     >
-                        <svg class="nav-logo-icon" width="100" height="30">
-                            <use href="./img/sprite.svg#logo"></use>
-                        </svg>
-                    </a>
-                </nav>
+                    <span class="loader"></span>
+                </div>
+                <ul class="gallery"></ul>
             </div>
-        </header>
-        <main></main>
+        </main>
+        <script type="module" src="./main.js"></script>
     </body>
 </html>
